@@ -1,0 +1,375 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto Condensed', sans-serif;
+    background:#eeeeee;
+    height:100%;
+    margin:0;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:linear-gradient(to right,#f0a51a,#34428d);
+    padding:10px 20px;
+    z-index:1000;
+}
+
+.logo{
+    text-align:center;
+    font-size:32px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#808080;
+    padding:8px 40px;
+    font-size:24px;
+    transition:0.3s;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.3);
+}
+
+nav a:hover{
+    background:#666666;
+}
+
+main{
+    flex:1;
+    padding:160px 80px 40px;
+}
+
+article{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.text{
+    width:45%;
+}
+
+.text h1{
+    font-size:34px;
+    line-height:1.05;
+    margin-bottom:60px;
+    font-weight:700;
+}
+
+.text p{
+    font-size:28px;
+    font-style:italic;
+    color:#444444;
+    font-weight:300;
+}
+
+article img{
+    width:500px;
+}
+
+footer{
+    background:#111111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.pageTitle{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+.newsContainer{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.newsCard{
+    width:350px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    overflow:hidden;
+    transition:.3s;
+}
+
+.newsCard:hover{
+    transform:translateY(-8px);
+}
+
+.newsCard img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.newsCard h2{
+    padding:15px;
+}
+
+.newsCard p{
+    padding:0 15px 20px;
+    color:#555;
+}
+
+.newsCard button{
+    margin:15px;
+    padding:10px 20px;
+    border:none;
+    background:#34428d;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsCard button:hover{
+    background:#f0a51a;
+}
+
+.gamesTable{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:60px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.gamesTable th{
+    background:#34428d;
+    color:white;
+    padding:15px;
+}
+
+.gamesTable td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.gamesTable tr:hover{
+    background:#f5f5f5;
+}
+
+.gamesContainer{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.gameCard{
+    width:350px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.gameCard:hover{
+    transform:scale(1.03);
+}
+
+.gameCard img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.gameCard h2{
+    padding:15px;
+}
+
+.gameCard p{
+    padding:0 15px 20px;
+    color:#666;
+}
+
+.teamsContainer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.teamCard{
+    width:250px;
+    background:white;
+    border-radius:10px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.teamCard:hover{
+    transform:translateY(-10px);
+}
+
+.teamCard img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.teamCard h2{
+    margin-bottom:10px;
+}
+
+.teamCard p{
+    color:#666;
+    font-size:18px;
+}
+
+.boardTable{
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.boardTable th{
+    background:#34428d;
+    color:white;
+    padding:18px;
+    font-size:22px;
+}
+
+.boardTable td{
+    padding:16px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+    font-size:20px;
+}
+
+.boardTable tr:hover{
+    background:#f2f2f2;
+}
+
+.mainButton{
+    display:inline-block;
+    margin-top:40px;
+    padding:15px 35px;
+    background:#34428d;
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.mainButton:hover{
+    background:#f0a51a;
+}
+
+.infoSection{
+    margin-top:80px;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.infoCard{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    text-align:center;
+    transition:.3s;
+}
+
+.infoCard:hover{
+    transform:translateY(-8px);
+}
+
+.infoCard h2{
+    color:#34428d;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.infoCard p{
+    font-size:20px;
+    color:#555;
+    line-height:1.5;
+}
+
+#theme{
+    display:none;
+}
+
+.themeButton{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.page{
+    min-height:100vh;
+    background:#eeeeee;
+    color:black;
+    transition:.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+#theme:checked ~ .page{
+    background:#181818;
+    color:white;
+}
+
+#theme:checked ~ .page header{
+    background:linear-gradient(to right,#1d1d1d,#222f66);
+}
+
+#theme:checked ~ .page footer{
+    background:#000;
+}
+
+#theme:checked ~ .page .infoCard,
+#theme:checked ~ .page .teamCard,
+#theme:checked ~ .page .gameCard,
+#theme:checked ~ .page .newsCard,
+#theme:checked ~ .page .gamesTable,
+#theme:checked ~ .page .boardTable{
+    background:#2a2a2a;
+    color:white;
+}
+
+#theme:checked ~ .page .gamesTable td,
+#theme:checked ~ .page .boardTable td{
+    border-color:#555;
+}
+
+#theme:checked ~ .page p{
+    color:#dddddd;
+}
+
+#theme:checked ~ .page .boardTable tr:hover{
+    background:#3a3a3a;
+}
+
+#theme:checked ~ .page .gamesTable tr:hover{
+    background:#3a3a3a;
+}
