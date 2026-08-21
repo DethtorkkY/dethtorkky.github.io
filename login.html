@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS8News — Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            Counter Strike 2 - News
+        </div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="games.html">GAMES</a>
+            <a href="teams.html">TEAMS</a>
+            <a href="board.html">BOARD</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Создать профиль</h1>
+        <p class="subtitle">
+            Присоединяйтесь к сообществу CS8News
+        </p>
+        <form class="form">
+            <section class="form-section">
+                <h2>Личная информация</h2>
+                <div class="fields">
+                    <div class="field">
+                        <label for="nickname">Игровой ник</label>
+                        <input
+                            type="text"
+                            id="nickname"
+                            name="nickname"
+                            placeholder="Например: s1mple"
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@mail.com"
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="age">Возраст</label>
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            placeholder="16"
+                            min="10"
+                            max="100"
+                        >
+                    </div>
+                    <div class="field">
+                        <label for="city">Город</label>
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Ваш город"
+                        >
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2>Твой CS2</h2>
+                <div class="fields">
+                    <div class="field">
+                        <label for="rank">Твой уровень</label>
+                        <select id="rank" name="rank">
+                            <option>Новичок</option>
+                            <option>Средний</option>
+                            <option>Продвинутый</option>
+                            <option>Полупрофессионал</option>
+                            <option>Профессионал</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="hours">Часов в CS2</label>
+                        <input
+                            type="number"
+                            id="hours"
+                            name="hours"
+                            placeholder="1000"
+                            min="0"
+                        >
+                    </div>
+                </div>
+                <h3>Твоя основная роль</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="role" value="rifler">
+                        Rifler
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="awp">
+                        AWPer
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="support">
+                        Support
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="igl">
+                        IGL
+                    </label>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2>Что тебе интересно?</h2>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="interest" value="news">
+                        Новости
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="matches">
+                        Матчи
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="teams">
+                        Команды
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="players">
+                        Игроки
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="guides">
+                        Гайды
+                    </label>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2>Расскажи о себе</h2>
+                <label for="about">
+                    Немного информации о тебе
+                </label>
+                <textarea
+                    id="about"
+                    name="about"
+                    placeholder="Например: играю в CS2 с 2022 года..."
+                ></textarea>
+            </section>
+            <button type="submit">
+                СОЗДАТЬ ПРОФИЛЬ →
+            </button>
+        </form>
+    </main>
+    <footer>
+        © 2026 CS8News — Всё о мире Counter-Strike
+    </footer>
+</div>
+</body>
+</html>
